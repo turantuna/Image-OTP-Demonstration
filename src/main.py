@@ -54,10 +54,10 @@ for i,o in enumerate(list_out_img):
     list_arr[i] = np.array(o)
 i = 0
 for a,b in combinations(list_arr,2):
-
+    #xor each image pairwise with every other image
     result[:, :, :3] = np.bitwise_xor(a[:, :, :3], b[:, :, :3])
-    # Make fully opaque
     result[:, :, 3] = 255
+
     result_image = Image.fromarray(result, "RGBA")
     result_image.save(f"out/out{i}.png")
     i += 1
