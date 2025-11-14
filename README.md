@@ -53,7 +53,7 @@ To show the consequences of OTP reuse, the program:
 |-------------|-------------|-------------|
 | ![Enc 1](enc/encrypted_0.png) | ![Enc 2](enc/encrypted_2.png) | ![Enc 3](enc/encrypted_1.png) |
 
-*(They appear as random noise nothing can be learned from these alone.)*
+*(They appear as random noise nothing could have been learned from these if each time a new random OTP was used.)*
 
 ---
 
